@@ -14,7 +14,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100px 200px 100px;
-  grid-template-rows: [header]1fr [main]1000px [footer]1fr;
+  grid-template-rows: [header]80px [main]1000px [footer]1fr;
   width: 375px;
   margin: 0 auto;
 }
@@ -26,12 +26,35 @@ header{
   justify-content: center;
   align-items: center;
   background-color: darkgreen;
-  position: sticky;
   top:0 ;
 }
-main{
+.main{
   grid-column: 1/2;
   grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  margin: 0 auto;
+  padding: 50px;
+}
+.question p h2 {
+  margin: 0;
+}
+.question {
+  border: 2px solid black;
+  padding 0 2%;
+  margin: 20px 0;
+  font-size: 0.6em;
+  background: grey; 
+  color: blue; 
+  position: relative;
+}
+.bookmark{
+  color:darkgreen;
+  font-size: 2.5em;
+  position: absolute;
+  top: -10px;
+  right: 10px;
 }
 footer{
   grid-column: 1/2;
@@ -58,4 +81,5 @@ input,
 button {
   font-size: 1em;
 }
+
 
