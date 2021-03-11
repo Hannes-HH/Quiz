@@ -1,0 +1,28 @@
+.quiz-card {
+    display: grid; 
+    background-color: red;
+}
+
+.quiz-card-title {
+
+}
+
+.quiz-card_text {
+
+}
+
+quiz-card_bookmark {
+    background-color: transparent; 
+    color: black;
+}
+
+.quiz-card_bookmark:hover {
+    color: green;
+}
+
+.quiz-card_show-button {
+    background-color: hotpink;
+}
+.quiz-card_tag {
+    
+}
